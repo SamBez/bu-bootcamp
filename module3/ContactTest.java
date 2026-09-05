@@ -32,4 +32,10 @@ public class ContactTest {
     Contact c = new Contact("Alan Turing", "555-0001");
     assertTrue(c.toString().contains("555-0001"));
   }
+  @Test 
+  void toString_containsNameAndPhone() {
+    Contact c = new Contact("Alan Turing", "555-0001");
+    String s = c.toString();
+    assertTrue(s.contains("Alan Turing") && s.contains("555-0001"));
+  }
 } 
