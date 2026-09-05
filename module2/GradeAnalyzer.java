@@ -70,7 +70,7 @@ public class GradeAnalyzer {
             i++;
         }
         System.out.println(sum/scores.size());
-        return (double) (sum/scores.size());
+        return  ((double)sum/ (double)scores.size());
     } 
  
     // Writes and prints the report
